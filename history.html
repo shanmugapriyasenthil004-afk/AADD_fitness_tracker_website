@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>History – Lane</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<header class="top">
+  <h1>Lane<span>.</span></h1>
+  <p id="today-label"></p>
+</header>
+<nav class="nav">
+  <a href="/" >Dashboard</a>
+  <a href="/log" >Log</a>
+  <a href="/history" class="active">History</a>
+</nav>
+<main>
+
+  <section class="panel">
+    <h2>Last 12 weeks</h2>
+    <div id="heat" class="heat"></div>
+    <p class="legend">Darker squares mean longer sessions.</p>
+  </section>
+
+  <section class="panel">
+    <h2>History</h2>
+    <ul id="list" class="list"></ul>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

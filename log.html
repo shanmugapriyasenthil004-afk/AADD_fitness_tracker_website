@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log workout – Lane</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<header class="top">
+  <h1>Lane<span>.</span></h1>
+  <p id="today-label"></p>
+</header>
+<nav class="nav">
+  <a href="/" >Dashboard</a>
+  <a href="/log" class="active">Log</a>
+  <a href="/history" >History</a>
+</nav>
+<main>
+
+  <section class="panel">
+    <h2>Log a workout</h2>
+    <form id="form">
+      <label>Activity
+        <input name="type" list="acts" required maxlength="30" placeholder="Running">
+        <datalist id="acts"><option>Running</option><option>Cycling</option><option>Strength</option><option>Yoga</option><option>Swimming</option><option>Walking</option><option>HIIT</option></datalist>
+      </label>
+      <label>Minutes <input name="minutes" type="number" min="1" required placeholder="35"></label>
+      <label>Calories <input name="calories" type="number" min="0" placeholder="280"></label>
+      <label>Date <input name="date" type="date" required></label>
+      <label class="wide">Note <input name="note" maxlength="100" placeholder="Felt strong on the hills"></label>
+      <button type="submit">Save workout</button>
+    </form>
+    <p id="err" role="alert"></p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
