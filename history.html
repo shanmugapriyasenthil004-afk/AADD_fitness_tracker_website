@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>History – Lane</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,24 +14,18 @@
   <h1>Lane<span>.</span></h1>
   <p id="today-label"></p>
 </header>
-<nav class="nav">
-  <a href="/" >Dashboard</a>
-  <a href="/log" >Log</a>
-  <a href="/history" class="active">History</a>
-</nav>
 <main>
-
-  <section class="panel">
-    <h2>Last 12 weeks</h2>
-    <div id="heat" class="heat"></div>
-    <p class="legend">Darker squares mean longer sessions.</p>
-  </section>
-
   <section class="panel">
     <h2>History</h2>
     <ul id="list" class="list"></ul>
   </section>
 </main>
+<nav class="tabs">
+  <a href="index.html"><span class="ic">🏠</span><span>Home</span></a>
+  <a href="log.html"><span class="ic">➕</span><span>Log</span></a>
+  <a href="stats.html"><span class="ic">📊</span><span>Stats</span></a>
+  <a href="history.html" class="active"><span class="ic">🗒️</span><span>History</span></a>
+</nav>
 <script src="app.js"></script>
 </body>
 </html>

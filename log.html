@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Log workout – Lane</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,13 +14,7 @@
   <h1>Lane<span>.</span></h1>
   <p id="today-label"></p>
 </header>
-<nav class="nav">
-  <a href="/" >Dashboard</a>
-  <a href="/log" class="active">Log</a>
-  <a href="/history" >History</a>
-</nav>
 <main>
-
   <section class="panel">
     <h2>Log a workout</h2>
     <form id="form">
@@ -37,6 +31,12 @@
     <p id="err" role="alert"></p>
   </section>
 </main>
+<nav class="tabs">
+  <a href="index.html"><span class="ic">🏠</span><span>Home</span></a>
+  <a href="log.html" class="active"><span class="ic">➕</span><span>Log</span></a>
+  <a href="stats.html"><span class="ic">📊</span><span>Stats</span></a>
+  <a href="history.html"><span class="ic">🗒️</span><span>History</span></a>
+</nav>
 <script src="app.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@ app.use(express.static(pub));
 
 app.get('/', (req, res) => res.sendFile(path.join(pub, 'index.html')));
 app.get('/log', (req, res) => res.sendFile(path.join(pub, 'log.html')));
+app.get('/stats', (req, res) => res.sendFile(path.join(pub, 'stats.html')));
 app.get('/history', (req, res) => res.sendFile(path.join(pub, 'history.html')));
 
 app.use((req, res) => res.status(404).send('Page not found'));

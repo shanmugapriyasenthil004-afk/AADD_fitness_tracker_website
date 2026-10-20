@@ -125,7 +125,7 @@
         date: f.get('date'), note: (f.get('note') || '').trim()
       });
       save(list);
-      window.location.href = '/history';
+      window.location.href = 'history.html';
     });
   }
 

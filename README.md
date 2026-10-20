@@ -3,9 +3,10 @@
 Multi-page fitness tracker built with HTML, CSS, JavaScript, Node.js and Express.
 
 ## Pages
-- `/` – Dashboard (daily goal, streak, weekly stats, last 7 days)
-- `/log` – Log a workout
-- `/history` – 12-week heatmap and workout history
+- `index.html` Home (goal ring, streak, weekly stats)
+- `log.html` Log a workout
+- `stats.html` Last 7 days + 12-week heatmap
+- `history.html` Workout history
 
 ## Run
 ```bash

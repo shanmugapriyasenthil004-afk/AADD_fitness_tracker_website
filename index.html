@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dashboard – Lane</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Home – Lane</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -14,13 +14,7 @@
   <h1>Lane<span>.</span></h1>
   <p id="today-label"></p>
 </header>
-<nav class="nav">
-  <a href="/" class="active">Dashboard</a>
-  <a href="/log" >Log</a>
-  <a href="/history" >History</a>
-</nav>
 <main>
-
   <section class="track-card" aria-label="Today's progress">
     <div class="track-wrap">
       <svg viewBox="0 0 300 170" class="track" role="img" aria-label="Daily goal progress">
@@ -46,13 +40,13 @@
     <div><b id="wk-min">0</b><span>minutes this week</span></div>
     <div><b id="wk-cal">0</b><span>kcal this week</span></div>
   </section>
-
-  <section class="panel">
-    <h2>Last 7 days</h2>
-    <div id="bars" class="bars"></div>
-    <p class="cta"><a href="/log">+ Log a workout</a></p>
-  </section>
 </main>
+<nav class="tabs">
+  <a href="index.html" class="active"><span class="ic">🏠</span><span>Home</span></a>
+  <a href="log.html"><span class="ic">➕</span><span>Log</span></a>
+  <a href="stats.html"><span class="ic">📊</span><span>Stats</span></a>
+  <a href="history.html"><span class="ic">🗒️</span><span>History</span></a>
+</nav>
 <script src="app.js"></script>
 </body>
 </html>
